@@ -1,16 +1,25 @@
-# React + Vite
+# Mapanin 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Mapanin** adalah aplikasi Kalkulator Finansial & Perencana Keuangan (Goal Planner) berbasis web yang membantu pengguna merencanakan masa depan finansial mereka dengan akurasi tinggi.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [Disini](https://rizkiyusra.github.io/mapanin/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*(Nanti kamu bisa ganti link gambar ini dengan screenshot asli aplikasi)*
 
-## React Compiler
+## ✨ Fitur Utama
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Kalkulator Aset (Compound Interest):** Menghitung pertumbuhan aset dengan metode *Monthly* (Rutin) dan *Annual* (Lump Sum).
+* **Goal Planner:** Estimasi waktu untuk mencapai target dana berdasarkan profil risiko (Konservatif, Moderat, Agresif).
+* **Responsive Design:** Tampilan optimal di Desktop dan Mobile (App-like experience).
+* **Visualisasi Data:** Grafik interaktif menggunakan Chart.js.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Framework:** React + Vite
+* **Language:** JavaScript (ES6+)
+* **Styling:** Tailwind CSS v4
+* **Charting:** Chart.js + React-chartjs-2
+* **Icons:** Lucide React
+* **Deployment:** GitHub Actions (CI/CD)
+---
+&copy; 2025 Mapanin. Developed by **Rizki Maulana Yusra**.
