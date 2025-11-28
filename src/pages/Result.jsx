@@ -1,5 +1,5 @@
 import { Link, useSearchParams, Navigate } from 'react-router-dom';
-import { generateGrowthData, formatRupiah, formatCompactNumber } from '../utils/financial';
+import { generateGrowthData, formatRupiah, formatCompactNumber } from '../utils/finansialHelper.jsx';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from 'chart.js';
 import { ArrowLeft, TrendingUp } from 'lucide-react';

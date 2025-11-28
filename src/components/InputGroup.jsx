@@ -1,4 +1,4 @@
-import { formatNumberInput } from '../utils/financial';
+import { formatNumberInput } from '../utils/finansialHelper.jsx';
 
 const InputGroup = ({ label, value, onChange, prefix = "", type = "number", placeholder = "0", error }) => {
 

@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import InputGroup from '../components/InputGroup';
-import { formatRupiah, calculateScenario, parseNumberInput } from '../utils/financial';
+import { formatRupiah, calculateScenario, parseNumberInput } from '../utils/finansialHelper.jsx';
 import { Target, Clock, Calculator, ShieldCheck, TrendingUp, Zap, PieChart } from 'lucide-react';
 
 const GoalPlanner = () => {
