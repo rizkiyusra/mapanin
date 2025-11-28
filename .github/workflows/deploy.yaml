@@ -34,7 +34,7 @@ jobs:
         run: npm run build
 
       - name: Create 404.html for Routing
-        run: cp ./dist/index.html ./dist/index.html
+        run: cp ./dist/index.html ./dist/404.html
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
