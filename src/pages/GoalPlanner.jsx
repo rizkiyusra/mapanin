@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import InputGroup from '../components/InputGroup';
-import { formatRupiah, calculateScenario, parseNumberInput } from '../utils/finansialHelper.jsx';
+import { formatRupiah, calculateScenario, parseNumberInput, formatCompactNumber } from '../utils/finansialHelper.jsx';
 import { Target, Clock, Calculator, ShieldCheck, TrendingUp, Zap, PieChart } from 'lucide-react';
 
 const GoalPlanner = () => {
@@ -234,13 +234,16 @@ const GoalPlanner = () => {
                                     <div className="bg-gray-50 p-4 rounded-2xl border border-gray-100 flex flex-col justify-center">
                                         <p className="text-gray-400 text-xs font-bold uppercase tracking-wider mb-1">Potensi Profit</p>
                                         <div className="flex items-baseline gap-1">
-                                            <span className={`text-lg font-bold ${currentScenario.textColor}`}>+{formatRupiah(currentScenario.interest)}</span>
+                                        <span className={`text-lg font-bold ${currentScenario.textColor} break-words`} title={formatRupiah(currentScenario.interest)}>
+                                            +{formatCompactNumber(currentScenario.interest)}
+                                        </span>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="bg-white p-5 rounded-2xl mb-8 border border-gray-100 shadow-sm flex items-start gap-4">
-                                    <div className={`p-3 rounded-xl ${currentScenario.bgSoft} text-gray-700`}>
+                                <div
+                                    className="bg-white p-5 rounded-2xl mb-8 border border-gray-100 shadow-sm flex items-start gap-4">
+                                <div className={`p-3 rounded-xl ${currentScenario.bgSoft} text-gray-700`}>
                                         {currentAsset.icon}
                                     </div>
                                     <div>

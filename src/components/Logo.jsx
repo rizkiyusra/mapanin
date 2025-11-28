@@ -1,8 +1,9 @@
 const Logo = () => {
+    const baseUrl = import.meta.env.BASE_URL;
     return (
         <div className="flex items-center gap-1">
             <img
-                src="/logo.svg"
+                src={`${baseUrl}logo.svg`}
                 alt="Logo Mapanin"
                 className="w-9 h-9 shadow-md shadow-teal-100 rounded-lg hover:rotate-3 transition-transform duration-300"
             />
